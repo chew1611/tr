@@ -1,0 +1,276 @@
+body,html{
+  width:100%;height:100%;margin:0; padding:0;
+  color: black;font-family: serif;
+  font-size: 18px;
+}
+.font{
+  text-align: center;
+  font-size: 18px;
+}
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+
+
+.columnsContainer, footer, header { position: relative; }
+
+.leftColumn, .rightColumn, footer, header {  padding: 1em; }
+
+.leftColumn { margin-bottom: .5em; }
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 47.5em ) {
+  .leftColumn { margin-right: 19.5em; }
+
+  .rightColumn { position: absolute; top: 0; right: 0; width: 18.75em; }   
+}
+.b1{
+  width: 80%;
+}
+@media screen and (max-width: 600px ){
+  .b1{
+    width: 100%;
+  }
+}
+.column {
+    float: left;
+    width: 40%;
+    padding: 10px;
+    height: 300px;
+    margin-left: 3%;
+    margin: 5%; 
+   /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;  margin-left: 55%;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+.pp{
+  font-size: 18px;
+
+  text-align:center;
+width: 50%;margin-left:auto;
+display: block;
+margin-right: auto;
+}
+
+
+
+
+/* CSS */
+
+
+/* CSS */
+.button-6 {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;margin-left:auto;
+display: block;
+margin-right: auto;
+}
+
+.button-6:hover,
+.button-6:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button-6:hover {
+  transform: translateY(-1px);
+}
+
+.button-6:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}.text{
+ 
+  animation: fadeInAnimation ease 5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+#grad1 {
+  height: 600px;
+  background-color: #cccccc;
+  background-image: url("air1.jpg");
+  background-repeat: no-repeat;
+  width: 50%;
+}
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.ko{
+  background-image: url('sp.jpg');
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; display: block;
+}
+.th{
+  background-image: url('th1.jpg');
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; display: block;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cd:hover .overlay {
+  opacity: 1;
+}.cd {
+  position: relative;
+  width: 50%;
+  display: block;
+margin-right: auto;
+margin-left: auto;
+}
+
+.textq {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/* CSS */
+.button-7 {
+  background-color: #0095ff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-7:hover,
+.button-7:focus {
+  background-color: #07c;
+}
+
+.button-7:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.button-7:active {
+  background-color: #0064bd;
+  box-shadow: none;
+}

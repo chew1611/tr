@@ -1,0 +1,128 @@
+.i1{
+	width: 48%;position: absolute;
+	top: 0;left: 0;height: 100%;
+}
+.i2{
+	width: 52%;position: absolute;
+	top: 0;left: 48%;height:100%;
+}
+.filter{
+	filter: brightness(0.4);
+}
+.filter1{
+	filter: brightness(0.4);
+}
+.pp{
+	position: absolute;
+	top: 25%;color: white;
+	text-align: center;left: 40%;
+}
+@keyframes fadeInLeft {
+  0% {
+     opacity: 0;
+     transform: translateX(-20px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0);
+  }
+
+
+
+} .fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  } 
+.animated{
+  padding-top:95px;
+  margin-bottom:60px;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  
+}
+
+
+/* CSS */
+.button-7 {
+  background-color: #0095ff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.bgimg{
+ height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+  background-image: url(bg.jpg);
+ 
+}body, html {
+  height: 100%;
+  margin: 0;
+}
+.bg-text{
+  position: absolute;top: 22%;color: white;
+  left: 30%;text-align: center;
+
+}
+  @media screen and (max-width: 600px){
+    .bg-text{
+  position: absolute;top: 22%;color: white;
+  left:12%;text-align: center;
+
+}
+  }
+  .box{
+    border: 1px solid white;
+    width: 45%;display: block;
+    margin-left: auto;
+    margin-right: auto;
+   position: absolute;
+   top: 18%;left: 29%;
+   height: 45%;
+   background-color: rgba(0,0,0,0.5);
+   color: white;
+ 
+  }
+   @media screen and (max-width: 600px){
+    .box{
+      width: 100%;left: 0;
+    }
+   }
+   .tex{
+    border: 1px solid white;
+    width: 100%;height: 45%;
+    margin-top: 12%;
+   }
+   .su{
+    border: 1px solid white;
+    color: black;
+    width: 150%;padding: 10%;
+    margin-top: 4%;
+    border-radius: 5px;  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+   }

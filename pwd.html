@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Peace OF Mind</title>
+	<link rel="stylesheet" type="text/css" href="start.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+</head>
+<body>
+
+<div class="bgimg">
+<div class="box"><h2 style="text-align: center;">Welcome My Agency</h2>
+<center>
+
+<table>
+	
+<tr>
+
+	<td>Name</td><span id = "me" style="color:red"> </span> <br><br>  
+	<td><input type="text"  name="name" id="email" required></td>
+</tr>
+
+
+
+
+
+<tr>
+
+	<td> Password</td><span id = "message" style="color:red"> </span> <br><br>  
+	<td><input type="password"  name="cpwd" id="pwd" required ></td>
+</tr>
+
+<tr><td><input type="submit" name="" vlaue="submit" onclick="myfun()" class="su"></td>
+</tr>
+
+</table>
+</center>
+
+</div>
+</div>
+
+<script type="text/javascript">
+	
+	function myfun(){
+var pw = document.getElementById("pwd").value;  
+var n = document.getElementById("email").value; 
+  //check empty password field  
+  if(pw== "") {  
+     document.getElementById("message").innerHTML = "**Fill the password please!";  
+     return false;  
+  }  
+ 
+ //minimum password length validation  
+  if(pw.length < 8) {  
+     document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";  
+     return false;  
+  }  
+  
+//maximum length of password validation  
+  if(pw.length > 15) {  
+     document.getElementById("message").innerHTML = "**Password length must not exceed 15 characters";  
+     return false;  
+  } 
+  
+  else {  
+   window.location = "home.html";  
+  }  
+
+}
+</script>
+</body>
+</html>
